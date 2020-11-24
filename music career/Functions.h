@@ -26,6 +26,7 @@ int int1 = 0; //it's a temporary integer, store whatever you want, use it as if 
 int int2 = 0; //it's a temporary integer, store whatever you want, use it as if it was RAM memory
 //stringstream sstream1; //it's a temporary string stream, store whatever you want, use it as if it was RAM memory
 char char1; //it's a temporary char, store whatever you want, use it as if it was RAM memory
+int iLine; //which line you should use to read
 
 void Line() {
 	cout << "------------------------------------------------------------------------------------------------------------------------\n";
@@ -53,5 +54,6 @@ void DeleteSave()
 	remove("skills_sing.mci");
 	remove("skills_music.mci");
 	remove("skills_lyrics.mci");
+	remove("albums.mc");
 	cout << "Files deleted!\n";
 }

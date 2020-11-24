@@ -3,7 +3,7 @@
 #include "Functions.h"
 
 int AlbumMaker() {
-	start:
+	//start:
 	Line();
 	cout << "Welcome to Album maker 3000! better than 2000 that's for sure! here you'll make albums instead of seeing them\n";
 	Line();
@@ -12,7 +12,7 @@ int AlbumMaker() {
 	cout << "|3| - Back\n";
 	Line();
 	input:
-	cout << sUsername << ": ";
+	//cout << sUsername << ": ";
 	cin >> iUserInput;
 	if (iUserInput == 2) {
 		cout << "Game: Feature not available\n";
@@ -33,10 +33,10 @@ int AlbumMaker() {
 		cin >> sUserInput;
 		ifstream In_albums("albums.mc");
 		In_albums >> string1;
+		In_albums.close();
 		ofstream Out_albums ("albums.mc");
 		Out_albums << string1 << endl << sUserInput << endl;
 		Out_albums.close();
-		In_albums.close();
 		cout << "Album " << sUserInput <<" made\n";
 		goto input;
 	}

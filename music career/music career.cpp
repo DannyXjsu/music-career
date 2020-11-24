@@ -143,14 +143,13 @@ int main()
         cout << "5. Settings\n";
         Line();
     input:
+        cout << sUsername << ": ";
         cin >> iUserInput;
         switch (iUserInput)
         {
         case 1:
-            cout << "Making a song is not supported yet\n";
             system("cls");
             SongMenu();
-            return 1;
             goto start;
         case 3:
             cout << "Studying is not supported yet\n";
